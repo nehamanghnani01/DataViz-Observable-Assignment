@@ -1,33 +1,18 @@
 # CSCE 679 - Data Visualization Assignment 2
 
-https://observablehq.com/d/c476f5b72599e8aa@644
+This assignment is done on Observable.js
 
-View this notebook in your browser by running a web server in this folder. For
-example:
+To run this notebook, 
 
-~~~sh
-npx http-server
-~~~
+First clone the repo
 
-Or, use the [Observable Runtime](https://github.com/observablehq/runtime) to
-import this module directly into your application. To npm install:
+Then, cd into the folder, and install http-server with the following command 
 
-~~~sh
-npm install @observablehq/runtime@5
-npm install https://api.observablehq.com/d/c476f5b72599e8aa@644.tgz?v=3
-~~~
+npm install http-server 
 
-Then, import your notebook and the runtime as:
+To run the http-server, run the below command in terminal 
+http-server -p 8080
 
-~~~js
-import {Runtime, Inspector} from "@observablehq/runtime";
-import define from "c476f5b72599e8aa";
-~~~
+This will run the Observable notebook in local server. 
 
-To log the value of the cell named “foo”:
-
-~~~js
-const runtime = new Runtime();
-const main = runtime.module(define);
-main.value("foo").then(value => console.log(value));
-~~~
+Open the local server link prompted in the terminal (http://127.0.0.1:8080/) to view the notebook in browser.
